@@ -1,0 +1,51 @@
+
+#header a{
+    color: #fffaf5;
+}
+
+#header a:hover {
+    color: #FFB1B1;
+}
+
+.container-home{
+    margin: auto;
+    width: 1920px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+    display: flex;
+    animation: fadeInFromBelow 0.5s ease-out;
+    border-radius: 30px;
+    background: url('../images/main-bg.png') center center / contain no-repeat;
+}
+
+.main-logo{
+    position: absolute;
+    left: 0;
+    background: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.main-logo img{
+    width: 250px;
+    height: 50%;
+    background-color: none !important;
+    animation: fadeInFromBelow 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.25s;
+}
+
+@keyframes fadeIn{
+    0% {
+        color: #fffaf5;
+    }
+    100% {
+        color: #FFB1B1;
+    }
+}
